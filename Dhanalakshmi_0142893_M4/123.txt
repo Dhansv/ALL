@@ -1,0 +1,84 @@
+import java.net.URL;
+import org.junit.Assert;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.MalformedURLException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.Platform;
+java -jar selenium-server-standalone-2.47.1.jar -Dwebdriver.chrome.driver="D:\chromedriver.exe" -role node
+-browser browserName=chrome-hub http://10.102.52.76.4444/grid/register -port 5666
+
+
+
+
+
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+public class HubNode {
+
+	WebDriver driver;
+	String baseurl,nodeurl;
+	@BeforeTest
+	public void display() throws MalformedURLException
+	{
+	
+		baseurl="D:/Module2_3_4 Material/Module4/Old Firefox/Selenium/Selenium Installations/Selenium Demos & Lab files/Lesson 5-HTML Pages/Lesson 5-HTML Pages/WorkingWithForms.html";
+				
+				nodeurl="http://10.102.52.76:5555/wd/hub";
+
+		DesiredCapabilities t=new DesiredCapabilities().chrome();
+		
+		t.setBrowserName("chrome");
+		t.setPlatform(Platform.WINDOWS);
+		driver=new RemoteWebDriver(new URL(nodeurl),t);
+		
+	}
+	@AfterTest
+	public void aftertest()
+	{
+
+	}
+	@Test
+	public void simpletest()
+	{
+		driver.get(baseurl);
+		
+		Assert.assertEquals("Email Registration Forms",driver.getTitle());
+		
+	}
+}
+
+
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.*;
+
+public class DataDriven {
+	WebDriver driver;
+	@Test(dataProvider="LoginData")
+	public void LoginToShoppingApp(String username,String password) throws 
+	{
+		driver=new FirefoxDriver;
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.get("file:///D:/Module2_3_4%20Material/Module4/Old%20Firefox/Selenium/Selenium%20Installations/Selenium%20Demos%20&%20Lab%20files/Lab%20Files/Lab%20Files/LoginPage.html");
+	    driver.findElement(By.name("userid")).sendKeys(username);
+
+	    driver.findElement(By.name("pswrd")).sendKeys(password);
+	    		 driver.findElement(By.xpath("/html/body/form/input[3]")).click();
+	    		 Thread.sleep(5000);
+	    		 System.out.println(driver.getTitle());
+	    driver.close();
+	    //driver.class();
+	    
+	}
+
+}

@@ -1,0 +1,18 @@
+Node-
+java -jar selenium-server-standalone-2.48.2.jar -Dwebdriver.chrome.driver="D:\chromedriver.exe" -role node -browser browserName=chrome -hub http://10.102.52.18:4444/grid/register -port 5666
+
+Hub-
+java -jar selenium-server-standalone-2.48.2.jar -role hub
+
+ip: Connection-specific DNS Suffix  . : corp.capgemini.com
+ IPv4 Address. . . . . . . . . . . : 10.102.52.18
+
+
+java -jar selenium-server-standalone-2.48.2.jar -Dwebdriver.firefox.driver="D:\firefox.exe" -role node -browser browserName=firefox -hub http://10.102.52.18:4444/grid/register -port 5666
+
+
+
+
+
+
+java -jar selenium-server-standalone-2.48.2.jar -Dwebdriver.internetExplorer.driver="D:\IEDriverServer.exe" -role node -hub http://10.102.52.18:4444/grid/register -port 5666

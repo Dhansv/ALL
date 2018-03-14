@@ -1,0 +1,186 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Consolas;}{\f1\fnil\fcharset0 Consolas;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red63\green127\blue95;\red127\green159\blue191;\red42\green0\blue255;\red0\green0\blue255;\red0\green0\blue192;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\cf1\lang9\b\f0\fs20 import\cf2\b0  \ul java.awt.List\ulnone ;\cf0\par
+\par
+\cf1\b import\cf2\b0  org.openqa.selenium.By;\cf0\par
+\cf1\b import\cf2\b0  org.openqa.selenium.WebDriver;\cf0\par
+\cf1\b import\cf2\b0  org.openqa.selenium.WebElement;\cf0\par
+\cf1\b import\cf2\b0  org.openqa.selenium.firefox.FirefoxDriver;\cf0\par
+\cf1\b import\cf2\b0  org.openqa.selenium.support.ui.ExpectedConditions;\cf0\par
+\cf1\b import\cf2\b0  org.openqa.selenium.support.ui.WebDriverWait;\cf0\par
+\par
+\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Q2_Webdriver \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] args) \cf1\b throws\cf2\b0  InterruptedException \{\cf0\par
+\cf2\tab\tab\cf3 // \cf4\b TODO\cf3\b0  Auto-generated method stub\cf0\par
+\cf2\tab\tab\cf0\par
+\par
+\cf2\tab\tab\tab\tab WebDriver driver = \cf1\b new\cf2\b0  FirefoxDriver();\cf0\par
+\cf2\tab\tab\tab     String baseUrl = \cf5 "{\field{\*\fldinst{HYPERLINK "https://demo.opencart.com/"}}{\fldrslt{\ul\cf6 https://demo.opencart.com/}}}\f0\fs20 "\cf2 ;\cf0\par
+\cf2\tab\tab\tab     driver.get(baseUrl);\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab     \cf1\b if\cf2\b0 (driver.getTitle().contentEquals(\cf5 "Your Store"\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Title Verified\tab Your Store"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Title Not Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     Thread.\i sleep\i0 (1000);\cf0\par
+\cf2\tab\tab\tab    \cf0\par
+\cf2\tab\tab\tab     \cf3 //List<WebElement>count=driver.findElements(By.tagName("a"));\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i xpath\i0 (\cf5 ".//*[@id='top-links']/ul/li[2]/a/span[2]"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i linkText\i0 (\cf5 "Register"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-email"\cf2 )).sendKeys(\cf5 "krishnakanth010@live.com"\cf2 );\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-telephone"\cf2 )).clear();\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-telephone"\cf2 )).sendKeys(\cf5 "950183735"\cf2 );\cf0\par
+\par
+\cf2\tab\tab\tab     Thread.\i sleep\i0 (2000);\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i cssSelector\i0 (\cf5 "input.btn.btn-primary"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\par
+\cf2\tab\tab\tab     \cf0\par
+\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     \cf1\b if\cf2\b0 (driver.findElement(By.\i cssSelector\i0 (\cf5 "div.text-danger"\cf2 )).getText().contentEquals(\cf5 "First Name must be between 1 and 32 characters!"\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "First Name is a Mandatory Field Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "First Name Mandatory:Error"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     \cf1\b if\cf2\b0 (driver.findElement(By.\i xpath\i0 (\cf5 "//fieldset[@id='account']/div[3]/div/div"\cf2 )).getText().contentEquals(\cf5 "Last Name must be between 1 and 32 characters!"\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Last Name is a Mandatory Field Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Last Name Mandatory:Error"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-password"\cf2 )).clear();\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-password"\cf2 )).sendKeys(\cf5 "Krish123"\cf2 );\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-confirm"\cf2 )).clear();\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-confirm"\cf2 )).sendKeys(\cf5 "Krish"\cf2 );\cf0\par
+\cf2\tab\tab\tab     Thread.\i sleep\i0 (2000);\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i cssSelector\i0 (\cf5 "input.btn.btn-primary"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     \cf1\b if\cf2\b0 (driver.findElement(By.\i xpath\i0 (\cf5 "//div[@id='content']/form/fieldset[2]/div[2]/div/div"\cf2 )).getText().contentEquals(\cf5 "Password confirmation does not match password!"\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Passwords Do Not Match Message Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Passwords Do Not Match Error Not Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-firstname"\cf2 )).clear();\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-firstname"\cf2 )).sendKeys(\cf5 "Krishna"\cf2 );\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-lastname"\cf2 )).clear();\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-lastname"\cf2 )).sendKeys(\cf5 "Kanth"\cf2 );\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-confirm"\cf2 )).clear();\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i id\i0 (\cf5 "input-confirm"\cf2 )).sendKeys(\cf5 "Krish123"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i name\i0 (\cf5 "newsletter"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i xpath\i0 (\cf5 "(//input[@name='newsletter'])[2]"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i name\i0 (\cf5 "agree"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     Thread.\i sleep\i0 (2000);\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i cssSelector\i0 (\cf5 "input.btn.btn-primary"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     Thread.\i sleep\i0 (2500);\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     \cf1\b if\cf2\b0 (driver.findElement(By.\i cssSelector\i0 (\cf5 "#content > h1"\cf2 )).getText().contentEquals(\cf5 "Your Account Has Been Created!"\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Email Pattern Verified (System Accepts user@domain.com pattern"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Heading Verified \tab Your account has been created"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Heading Not Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i linkText\i0 (\cf5 "Phones & PDAs"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     Thread.\i sleep\i0 (2000);\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i cssSelector\i0 (\cf5 "div.image > a > img.img-responsive"\cf2 )).click();\cf0\par
+\par
+\cf2\tab\tab\tab     \cf1\b if\cf2\b0 (driver.findElement(By.\i cssSelector\i0 (\cf5 "div.col-sm-4 > h1"\cf2 )).getText().contentEquals(\cf5 "HTC Touch HD"\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Text Verified \tab HTC Touch HD"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Text (HTC Touch HD) Not Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     Thread.\i sleep\i0 (1000);\cf0\par
+\cf2\tab\tab\tab     driver.navigate().back();\cf0\par
+\cf2\tab\tab\tab     Thread.\i sleep\i0 (1000);\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i xpath\i0 (\cf5 ".//*[@id='content']/div[2]/div[1]/div/div[2]/div[2]/button[1]"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     Thread.\i sleep\i0 (3000);\cf0\par
+\cf2\tab\tab\tab     \cf1\b if\cf2\b0 (driver.findElement(By.\i xpath\i0 (\cf5 "//div[@id='product-category']/div"\cf2 )).getText().contentEquals(\cf5 "Success: You have added HTC Touch HD to your shopping cart!\\n\f1\'d7\f0 "\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Product Added Succesfully Text Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Product Added Succesfully Text Not Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \tab     \cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i linkText\i0 (\cf5 "Brands"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     \cf1\b if\cf2\b0 (driver.getTitle().contentEquals(\cf5 "Find Your Favorite Brand"\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Title Verified \tab Find Your Favorite Brand"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Title (Find Your Favorite Brand) Not Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i linkText\i0 (\cf5 "Canon"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     \cf1\b if\cf2\b0 (driver.findElement(By.\i cssSelector\i0 (\cf5 "h2"\cf2 )).getText().contentEquals(\cf5 "Canon"\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Heading Verified \tab Cannon"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Heading (Cannon) Not Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2   \cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i xpath\i0 (\cf5 "(//button[@type='button'])[11]"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     Thread.\i sleep\i0 (3000);\cf0\par
+\cf2\tab\tab\tab     \cf1\b if\cf2\b0 (driver.findElement(By.\i xpath\i0 (\cf5 "//div[@id='product-manufacturer']/div"\cf2 )).getText().contentEquals(\cf5 "Success: You have added Canon EOS 5D to your wish list!\\n\f1\'d7\f0 "\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Product Added Succesfully to WishList Text Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (driver.findElement(By.\i xpath\i0 (\cf5 "//div[@id='product-manufacturer']/div"\cf2 )).getText().contentEquals(\cf5 "You must login or create an account to save Canon EOS 5D to your wish list!\\n\f1\'d7\f0 "\cf2 ))\cf0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Product Added Succesfully to WishList Text Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab     \{\cf0\par
+\cf2\tab\tab\tab     \tab System.\cf7\i out\cf2\i0 .println(\cf5 "Product Added Succesfully to WishList Text Not Verified"\cf2 );\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i linkText\i0 (\cf5 "Wish List"\cf2 )).click(); \cf0\par
+\cf2\tab\tab\tab     WebDriverWait wait = \cf1\b new\cf2\b0  WebDriverWait(driver, 10);\cf0\par
+\cf2\tab\tab\tab     WebElement \ul element\ulnone  = wait.until(ExpectedConditions.\i elementToBeClickable\i0 (By.\i linkText\i0 (\cf5 "Continue"\cf2 )));\cf0\par
+\cf2\tab\tab\tab     driver.findElement(By.\i linkText\i0 (\cf5 "Continue"\cf2 )).click();\cf0\par
+\cf2\tab\tab\tab     driver.close();\cf0\par
+\cf2\tab\tab\tab     System.\cf7\i out\cf2\i0 .println(\cf5 "Browser Closed."\cf2 );\cf0\par
+\cf2\tab\tab\}\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\par
+\f2\fs22\par
+}
+ 

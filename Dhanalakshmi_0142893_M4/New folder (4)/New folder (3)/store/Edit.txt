@@ -1,0 +1,213 @@
+package org.opencart;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class OpenCart {
+
+	private static String telephone;
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		WebDriver driver = new FirefoxDriver();
+		
+		String baseUrl = "https://demo.opencart.com/";
+		
+		String expectedTitle = "Your Store";
+		String actualTitle = "";
+
+		// launch Firefox and direct it to the Base URL
+		driver.get(baseUrl);
+		// get the actual value of the title
+		actualTitle = driver.getTitle();
+		
+		//Checking page Title
+		if (actualTitle.contentEquals(expectedTitle))
+			{
+				System.out.println("Your Title : Test Passed!");
+			} 
+		else
+			{
+				System.out.println("Your Title : Test Failed");
+			}
+		
+		Thread.sleep(5000);
+		//Clicking on My Accounts Link
+		driver.findElement(By.xpath(".//*[@id='top-links']/ul/li[2]/a/i")).click();
+		
+		//Clicking on Register
+		driver.findElement(By.xpath(".//*[@id='top-links']/ul/li[2]/ul/li[1]/a")).click();
+		
+		//Entering Mandatory Fields
+		
+		//Entering FirstName
+		driver.findElement(By.name("firstname")).sendKeys("Mihir"); 
+		
+		//Entering LastName
+		driver.findElement(By.id("input-lastname")).sendKeys("Jain"); 
+		
+
+		//Entering Email-Id
+		driver.findElement(By.id("input-email")).sendKeys("mihir161195@gmail.com"); 
+		
+		 try
+	        {
+	          WebElement a1 = driver.findElement(By.xpath("//*[@id='Email']"));
+	          System.out.println("---------Emaild exists --------------\n-----------------------");
+	          a1.sendKeys("ENTER CORRECT MAIL ID");
+	         }
+	    catch(Throwable e)
+	         {
+	         System.out.println("Emaild not found: " + e.getMessage());
+	         }
+		 
+		 
+		
+
+		 //Telephone
+			driver.findElement(By.name("telephone")).sendKeys("9523687410");
+			
+			try{
+				telephone = null;
+				if (telephone.length() <=10)
+				{
+			        // do stuff with your input 
+			    }
+				else
+				{
+			      throw new Exception("'" + telephone + "Telephone No. should be between 3 to 32 characters ");
+			    }
+			} catch(Exception e){
+			    System.out.println ("Exceeds length");
+			}
+			
+			
+		
+		//Entering Password
+		driver.findElement(By.cssSelector("#input-password")).sendKeys("mihirjain");
+		
+		//Entering Confirm Password
+		driver.findElement(By.xpath(".//*[@id='input-confirm']")).sendKeys("mihirjain");
+		
+		//Clicking No on Newsletters
+		driver.findElement(By.xpath("(//input[@name='newsletter'])[2]")).click();
+		System.out.println("You have not subscribed for Newsletters");
+		
+		//Clicking on Terms and Conditions CheckBox
+		driver.findElement(By.name("agree")).click();
+		
+		
+		 driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+		 //driver.switchTo().alert().accept();
+	     
+	    try{
+	    String f=driver.findElement(By.xpath(".//*[@id='account-register']/div[1]")).getText();
+	  
+	    System.out.println(f);
+	    }
+	    catch(Exception e)
+	    {
+	    	
+	    	System.out.println("You have accepted terms & conditions");
+	    }
+	    
+		//Verifying Title after creating account
+	    String a = driver.findElement(By.xpath(".//*[@id='content']/h1")).getText();
+	    String b = "Your Account Has Been Created!";
+	    
+	    if(a.contentEquals(b))
+	    {
+	    	System.out.println("Your Account Has Been Created!");
+	    }
+	   
+	    //Clicking on Phones and PDAs in mail menu
+	    driver.findElement(By.xpath(".//*[@id='menu']/div[2]/ul/li[6]/a")).click();
+	    
+	    //Clicking on HTC Touch Pad Icon
+	    driver.findElement(By.xpath(".//*[@id='content']/div[2]/div[1]/div/div[2]/div[1]/h4/a")).click();
+	    
+	    //Verifying Text 
+	   String c= driver.findElement(By.linkText("HTC Touch HD")).getText();
+	   String d = "HTC Touch HD";
+	   
+	   if(c.contentEquals(d))
+	   {
+		   System.out.println("HTC Touch HD");
+	   }
+	   else
+	   {
+		   System.out.println("Not Verified");
+	   }
+	   
+	 //Add to Cart option Selected
+	 	driver.findElement( By.xpath(".//*[@id='button-cart']")).click();
+	 		
+	 //Verifying Success Message
+	 	String i = driver.findElement(By.xpath(".//*[@id='product-product']/div[1]")).getText();
+	 	String j = "Success: You have added HTC Touch HD to your shopping cart!";
+	 	
+	 	if(i.contentEquals(j))
+	 	{
+	 		System.out.println("Success: You have added HTC Touch HD to your shopping cart!");
+	 	}
+	 	else
+	 	{
+	 		System.out.println("Success Message does not match");
+	 	}
+	 	//driver.get(baseUrl);
+	 	
+	 	Thread.sleep(5000);
+	 	
+	 	//Clicking on Brands under Extras
+	 		driver.findElement(By.linkText("Brands")).click();
+	 			
+	 	//Verifying Heading of the Brands Page
+	 		String g = driver.findElement(By.xpath(".//*[@id='content']/h1")).getText();
+	 		String h = "Find Your Favorite Brand";
+	 	
+	 		if(g.contentEquals(h))
+	 		{
+	 			System.out.println("Find Your Favorite Brand");
+	 		}
+	 		else
+	 		{
+	 			System.out.println("Heading does not match");
+	 		}
+	 			
+	 	//Click on Canon
+	 		driver.findElement(By.xpath(".//*[@id='content']/div[2]/div/a")).click();
+	 		
+	 		String e= driver.findElement(By.xpath(".//*[@id='content']/h2")).getText();
+	 		String f= "Canon";
+	 	if(e.contentEquals(f))
+	 		{
+	 			System.out.println("Canon");
+	 		}
+	 	Thread.sleep(5000);
+	 	driver.findElement(By.xpath(".//*[@id='content']/div[2]/div/div/div[2]/div[2]/button[2]")).click();
+	 		Thread.sleep(5000);
+	 	String h1=driver.findElement(By.xpath(".//*[@id='product-manufacturer']/div[1]")).getText();
+	 	String i1="Success: You have added Canon EOS 5D to your wish list! ";
+	 			
+	 	if(h1.contentEquals(i1))
+	 	{
+	 		System.out.println("Success: You have added Canon EOS 5D to your wish list! ");
+	 	}
+	 	
+	 	driver.findElement(By.linkText("Wish List")).click();
+	 	
+	 	String j1=driver.findElement(By.linkText("My Wish List")).getText();
+	 	String k="My Wish List";
+	 	if(j1.contentEquals(k))
+	 	{
+	 		System.out.println("My Wish List");
+	 	}
+	 	Thread.sleep(5000);
+	 	
+	 	driver.findElement(By.xpath(".//*[@id='content']/div[2]/div/a")).click();
+	 	driver.close();
+	}
+}
