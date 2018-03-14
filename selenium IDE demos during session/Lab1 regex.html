@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.bing.com/maps/" />
+<title>Lab1 regex</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Lab1 regex</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>file:///D:/2016%20July/Module%203/Test%20Automation%20and%20Tool%20Basics-Selenium/Selenium%20Demos%20&amp;%20Lab%20files/Lesson%205-HTML%20Pages/Lesson%205-HTML%20Pages/WorkingWithForms.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtUserName</td>
+	<td>neel</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtPhone</td>
+	<td>9876578901</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//input[@id='txtPhone']</td>
+	<td>regexp:^[0-9]{10}$</td>
+</tr>
+</tbody></table>
+</body>
+</html>
