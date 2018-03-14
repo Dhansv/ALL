@@ -1,0 +1,131 @@
+/***********************************************************************************************
+File		:	Customers_Detail.txt
+AuthorName	:	Abhishek Tiwari
+Description	:	Pseudocode to print Customers_detail
+Version		: 	1.0
+Date		:	11/12/2017
+***********************************************************************************************/
+
+BEGIN
+	DECLARE Phone_Number, Sum, Index AS INTEGER    // phone number and sum variable are used to store phone number and total price respectively
+	DECLARE Product_Name AS STRING ARRAY           // product name is used as string array variable to store different product name
+	DECLARE Customer_Name, Email_Address AS STRING // customer name and email address variable are used to store the customername and email address
+	DECLARE Product_Price, Quantity AS INTEGER ARRAY
+
+	DECLARE InvalidName AS Exception
+	DECLARE InvalidEmail AS Exception
+	DECLARE InvalidPhone AS Exception
+	DECLARE Invalidquantity AS Exception
+// all data are enter using prompt 
+	PROMPT Enter the Customer Name AND STORE IN Customer_Name 
+	PROMPT Enter the Phone Number AND STORE IN Phone_Number
+	PROMPT Enter the Email Address AND STORE IN Email_Address
+	PROMPT Enter the Product Name, Quantity AND STORE IN Product_Name, Quantity ARRAY
+//loop from 1 to 3 to store product data
+
+	FOR Index = 1 TO 3
+		ACCEPT Product_Name[Index]
+		ACCEPT Quantity[Index]
+	END FOR
+//checking data validity
+	IF(isvalidName(Customer_Name) && isvalidPhone(Phone_Number) && isvalidQuantity(Quantity[1]) && isvalidQuantity(Quantity[2]) && isvalidQuantity(Quantity[3]))
+	Sum=Sum(Product_Name[Index],Quantity[],3)
+	Average=Average(Student_Marks[],3)
+//printing all data
+
+	PRINT "Customer Name : " + Customer_Name
+
+	PRINT "Phone Number : " + Phone_Number
+
+	PRINT "Email Address : "+ Email_Address
+
+	PRINT "Sum : " + Sum
+	END IF
+
+	EXCEPTION
+		WHEN InvalidName THEN
+		PRINT "Invalid Name Entered"
+		
+		WHEN InvalidPhone THEN
+		PRINT "Invalid Phone Number Entered"
+		
+		WHEN InvalidQuantity THEN
+		PRINT "Invalid Quantity Entered"
+
+END
+
+/*************************************************************************************************
+Module		:	Sum()
+AuthorName	:	Abhishek Tiwari
+Description	:	calculating price(total billing)
+Date		:	11/12/2017
+*************************************************************************************************/
+
+SUB Sum(Product_Nmae[Index],Quantity[],3)
+	DECLARE Total_Amount,Index AS INTEGER
+	DECLARE Quantity1 AS INTEGER ARRAY 
+	INITIALIZE Total_Amount AS 0
+	INITIALIZE Index AS 1
+	FOR Index = 1 TO Size
+		IF(Product_Name[]=="Pen Drive") THEN
+			Quantity1[Index]=600*Quantity[1]
+		ELSE IF(Product_Name[]=="Memory Card") THEN
+			Quantity1[Index]=400*Quantity[2]
+		ELSE IF(Product_Name[]=="Speaker") THEN
+			Quantity1[Index]=800*Quantity[3]
+	END FOR
+	FOR Index=1 to Size
+		Total_Amount=Total_Amount+Quantity1[Index]
+	END FOR
+	Return Total_Amount
+END
+
+
+/********************************************************************************
+* Module Name         : isValidName(string)
+* Input Parameters    : string
+* Return Type         : BOOLEAN
+* Author              : Abhishek Tiwari
+* Description         : Module to check enterd string is valid or not 
+ *********************************************************************************/
+
+SUB isValidname(str)
+	IF (isstring(str) AND length(str) >0)
+		RETURN TRUE
+	ELSE
+		RAISE invalidString("Entered String is invalid")
+	END IF
+	
+ENDSUB
+********************************************************************************
+* Module Name         : isValidPhone(integer)
+* Input Parameters    : integer
+* Return Type         : BOOLEAN
+* Author              : Abhishek Tiwari
+* Description         : Module to check enterd mobile no is valid or not 
+ *********************************************************************************/
+
+SUB isValidPhone(num)
+	IF (isdigit(num) && length(num)== 10 )
+		RETURN TRUE
+	ELSE
+		RAISE invalidPhone("Entered phone number is invalid")
+	END IF
+	
+ENDSUB
+********************************************************************************
+* Module Name         : isValidQuantity(num)
+* Input Parameters    : number
+* Return Type         : BOOLEAN
+* Author              : Abhishek Tiwari
+* Description         : Module to check enterd quantity is valid or not 
+ *********************************************************************************/
+
+SUB isValidQuantity(num)
+	IF (isdigit(num) && num>=0 && num<=100)
+		RETURN TRUE
+	ELSE
+		RAISE invalidQuantity("Entered quantity  is invalid")
+	END IF
+	
+ENDSUB

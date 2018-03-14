@@ -1,0 +1,42 @@
+/***********************************************************************************************
+File		:	XML code with header file.txt
+AuthorName	:	Abhishek Tiwari
+Description	:	Xml code for the customer table.
+Version		: 	1.0
+Date		:	11/12/2017
+***********************************************************************************************/
+
+<?xml version="1.0"?>	<!--Pre Processing Instruction -->
+<Customer xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="test.xsd">
+<!-- Child Element and id is called as attribute -->
+	<Customer_Id id="101">
+		<Customer_Name>Robert</Customer_Name>
+		<Phone_Number>9087654321</Phone_Number>
+		<Email_Id>robertd@gmail.com</Email_Id>
+		<City>Mumbai</City>
+	</Customer_Id>
+	<Customer_Id id="102">
+		<Customer_Name>Saket Sharma</Customer_Name>
+		<Phone_Number>9165432123</Phone_Number>
+		<Email_Id>saketsharma@gmail.com</Email_Id>
+		<City>Pune</City>
+	</Customer_Id>
+	<Customer_Id id="103">
+		<Customer_Name>Raksha</Customer_Name>
+		<Phone_Number>9543212356</Phone_Number>
+		<Email_Id>raksha@gmail.com</Email_Id>
+		<City>Mumbai</City>
+	</Customer_Id>
+	<Customer_Id id="104">
+		<Customer_Name>Adarsh</Customer_Name>
+		<Phone_Number>9964321230</Phone_Number>
+		<Email_Id>adarsh@gmail.com</Email_Id>
+		<City>Mumbai</City>
+	</Customer_Id>
+	<Customer_Id id="105">
+		<Customer_Name>Kavya</Customer_Name>
+		<Phone_Number>9543212345</Phone_Number>
+		<Email_Id>kavya@gmail.com</Email_Id>
+		<City>Pune</City>
+	</Customer_Id>
+</Customer>

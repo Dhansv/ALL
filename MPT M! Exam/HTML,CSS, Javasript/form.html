@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-------------------------------------------------------------------------------
+ File		:	Customer_Detail.txt
+AuthorName	:	Abhishek Tiwari
+Description	:	The customer form with validations
+Version		: 	1.0
+Date		:	11/12/2017
+---------------------------------------------------------------------------------->
+
+<html>
+<head>
+<link href="styles.css" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+<body>
+<center>
+<Form name="myform" onsubmit="Calculate()">
+<table class="d1" cellpading="5" cellspacing="30">
+<Caption><h1>Online Shopping Mart</h1></Caption>
+<tr>
+<td>Customer Name: </td><td><input type="text" minlength="3" name="custname" placeholder="enter your name " required/></td></tr>
+<tr>
+<td> Phone Number: </td><td><input type="number" required min="7000000000" max="9999999999" name="mob"/></td></tr>
+<tr><td>Email Address : </td><td><input type="email" name="email" required/></td></tr>
+<tr>
+<td>Product Name :</td><td><select name="product" id="product" onChange="setprice()">
+                <option value="pendrive">Pen Drive<option value="memorycard">Memory Card<option value="speaker">Speaker</td></tr>	
+<tr><td>Price :</td><td><input type="number" min="1" size="35" name="txtNum" id="txtNum" required disabled/></td></tr>	 
+<tr>
+<td>quantity : </td><td><input type="number" name="quantity" min=1 id="txtqun" required /></td>		</tr>	 
+<tr><td></td><td><input type="Submit" class="btn" value="Submit"/></td></tr>
+</table>
+</Form>
+</center>
+</body>
+</html>

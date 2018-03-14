@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+h1 {
+	color: Black;
+	font-family: calibri;	
+	text-shadow: 2px 2px 6px gray;
+}
+
+.btn {
+	background-color: orange;
+	border-style: solid;
+	border-color: yellow;
+	padding: 10, 20;
+	border-radius: 25px;
+	height: 30px;
+	width: 80px;
+	text-align: center;
+	box-shadow: 5px 5px 5px skyblue;
+}
+
+.d1 {
+	background-color: lightgrey;
+	border-style: solid;
+	border-color: red;
+	box-shadow: 10px 10px 5px orange;
+
+}
+
+/*.d2 {
+	height: 50px;
+	width: 80px;
+	border-image: url(images/flower.PNG) 30 30 round;
+}*/
+
+input:focus{
+	background-color:yellow;
+}
