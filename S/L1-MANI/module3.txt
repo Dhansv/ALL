@@ -1,0 +1,819 @@
+<html>
+<body>
+<p>
+
+
+
+CORE JAVA
+
+
+
+1. What will be the output of the following code snippet?    
+
+String str1 = new String( "hello" );
+String str2 = "hello";
+System.out.println(str1==str2);
+System.out.println(str1.equals(str2));
+
+1). TRUE
+FALSE
+2). FALSE
+TRUE
+3). FALSE
+FALSE
+4). TRUE
+TRUE
+Solution :
+option [2] is correct
+
+
+
+ 2. Fill in the blank :
+
+Memory deallocation in java is done by _________.
+
+1). Programmer
+2). Operating system
+3). Garbage collector
+4). None of the above
+Solution :
+option [3] is correct
+
+
+
+
+3. What are the three primary components of Java's Security model ?
+
+1). Byte code Verifier
+2). Class Loader
+3). Security Manager
+4). Interpreter and Compiler
+5). Multithreaded
+Solution :
+option [1,2,3] are correct
+
+
+4. What is the output of the following code snippet ? 
+
+int i = (int) (5.6/2/7);
+
+1). 4
+2). 0
+3). 0.4
+4). 20
+Solution :
+option [2] is correct
+
+
+
+5. What are the benefits of organising classes into packages ?
+
+1). Prevents name-space collision
+2). Easy to find the classes you want if they're in a specific package
+3). Reduces the space used for storing classes & objects in the memory
+4). Prevents problems caused due to overloading and overriding
+Solution :
+option [1,2] are correct
+
+
+
+6. Consider the following code snippet :
+
+ _________ num; 
+ switch( num ) {
+   case 5 : System.out.println("Five");break ;
+   case 10 : System.out.println("Ten");break ;
+   case 12 : System.out.println("Twelve");break ;
+ }
+
+Choose the declarations of num variable such that it will not cause any compiler error.
+
+1). byte num = 10 ;
+2). short num = 10 ;
+3). int num = 10 ;
+4). All of the above
+Solution :
+option [4] is correct
+
+
+
+ 7. How does the debugger allow you to control the execution of your program?
+
+1). By setting breakpoints
+2). By compiling the code
+3). Using print statements after every line to trace the output/an error.
+4). By stepping through the code
+Solution :
+option [1,4] are correct
+
+
+
+
+7.Fill in the blank :
+
+______ is the super set which  contains tools for development of Java Code and execution of Java code.
+
+1). JRE
+2). JVM
+3). Java Compiler
+4). JDK
+Solution :
+option [4] is correct
+
+
+
+9. Given:
+
+1. public class Sumexample {
+2. public static void main (String[] args) {
+3. byte num1 = 110;
+4. byte num2 = 20;
+5. byte sum = num1 + num2;
+6. }
+7. }
+
+ Which statement is true?
+
+1). Compilation succeeds and sum stores 130.
+2). Line 5 contains compilation error indicating Type mismatch: cannot convert from int to byte
+3). Line 5 throws an exception indicating "Out of range"
+4). Line 3 and 4 contains errors that prevent compilation.
+Solution :
+option [2] is correct
+
+
+
+10. Consider the following code snippet:
+
+1. enum Season { WINTER, SPRING, SUMMER, FALL }  
+2. class EnumExample{  
+3. public static void main(String[] args) {  
+4. Season s=Season.WINTER;  
+5. System.out.println(s);  
+6. }
+7. }   
+
+Find the output.
+
+1). WINTER
+SPRING
+SUMMER
+FALL
+2). WINTER
+3). FALL
+4). Compilation error at line 4
+Solution :
+option [2] is correct
+
+
+
+
+11.What is the need of instanceOf operator?
+
+1). Checks an instance of class
+2). Checks the datatype of a variable
+3). Checks an instance of a subclass
+4). Checks an instance of a class that implements a particular interface
+Solution :
+option [1,3,4] are correct
+
+
+12. On which of the following  options abstract modifier cannot be used?
+
+1). constructor
+2). static methods
+3). non-static methods
+4). class
+Solution :
+option [1,2] are correct
+
+
+
+13. Which of the following is FALSE about abstract classes in Java ?
+
+1). Abstract class’ subclasses should implement all methods or declare themselves as abstract.
+2). Abstract classes cannot be instantiated
+3). Abstract classes are used only when there is a “is-a” type of relationship between the classes.
+4). You can inherit from multiple abstract classes
+Solution :
+option [4] is correct
+
+
+14. Consider the following code snippet and identify the true statements.
+
+class A  {   
+   public final int sum (int a, int b)  { return a+b; }
+}
+
+1). The method 'sum' can be overridden in sub class .
+2). The method 'sum' cannot be overloaded in sub class. 
+3). The method 'sum' can be overloaded in sub class .
+4). The method 'sum' cannot be overridden in sub class.
+Solution :
+option [3,4] are correct
+
+
+15. Which is the correct way of writing a Java interface ?
+
+1). public class interface Example {
+void fun1();
+void fun2(int i, String s);
+int x=10;
+}
+2). public interface Example {
+void fun1();
+void fun2(int i, String s);
+int x=10;
+}
+3). class interface Example {
+void fun1();
+void fun2(int i, String s);
+int x=10;
+}
+4). public interface Example {
+void fun1() { system.out.println("Hello"); }
+void fun2(int i, String s);
+int x=10;
+}
+Solution :
+option [2] is correct
+
+
+
+
+16. Consider the following code snippet and identify why is the 'super' keyword used in this code.
+
+class Base {
+    public void baseMethod() { 
+           System.out.println(“Base”);  
+     }
+ }
+class Derived extends Base {
+      public void derivedMethod() { 
+          super. baseMethod ();
+          System.out.println(“Derived”); 
+       }
+  }
+
+1). super keyword is used to call parent class constructor
+2). super keyword is used to call member of parent class
+3). super keyword is used to call the method of same class.
+4). super keyword hs not impact when used with any class members.
+Solution :
+option [2] is correct
+
+
+
+17. What will happen when you attempt to compile and run the following class?        
+
+class Base{
+Base(int var)
+{
+    System.out.println("Base");
+}
+}
+class Child extends Base{
+public static void main(String args[]){
+        Child obj = new Child();
+}
+}
+
+1). Compiles without any problem but doesnot display the output "Base"
+2). Compiles and produces output "Base"
+3). Generates Compile time error since constructor Base() is undefined for default constructor. 
+4). None of the above
+Solution :
+option [3] is correct
+
+
+18. Consider the following code snippet that depicts runtime polymorphism.
+
+class Base{
+ public void greet() {      
+  System.out.print("Base Hello"); 
+}
+}
+public class Child extends Base{
+  public void greet() {      
+         System.out.print("Child Hello"); 
+     }
+ public static void main(String[] args) {
+   -----------------------------
+  -----------------------------
+ }
+}
+
+Which of the following are the correct ways to call overriden method in child class so 
+as to get the output : Child Hello 
+
+1). Child obj = new Child();
+obj.greet();
+2). Base obj = new Base();
+obj.greet();
+3). Base obj = new Child();
+obj.greet();
+4). Child obj = new Base ();
+obj.greet();
+Solution :
+option [1,3] are correct
+
+
+
+19. Which of the following statements are true related to interface ?
+
+1). Interface has only abstract methods
+2). Multiple inheritence can be possible in interface.
+3). Class can implement only one interface .
+4). Interface do not allow to declare a member variable.
+Solution :
+option [1,2] are correct
+
+
+
+
+20. Consider the following code snippet :
+
+class Calculate
+{
+ void sum (int a, int b)
+ {
+  System.out.println("sum = "+ (a+b)) ;
+ }
+ void sum (double a, double b)
+ {
+  System.out.println("sum ="+ (a+b));
+ }
+ Public static void main (String[] args)
+ {
+  Calculate  obj1 = new Calculate();
+  obj1.sum (8.0,5);     
+ }
+}
+
+Which method is called ?
+
+1). sum (int a, int b) is called
+2). sum (double a, double b) is called
+3). Generates Compile time error
+4). compiles but generates no output
+Solution :
+option [2] is correct
+
+
+
+21. Which of the following options will ensure that each resource is closed at the end of statement?
+
+1). try with resource
+2). call close() function on the resource
+3). try with finally
+4). try with catch
+Solution :
+option [1] is correct
+
+
+22. What is the output for the below code?
+       
+Pattern p = Pattern.compile("po{3}l?p*");
+Matcher m = p.matcher("poool");
+boolean b = m.matches();
+System.out.println(b);
+
+1). b
+2). false 
+3). compile time error
+4). true 
+Solution :
+option [4] is correct
+
+
+
+23. What is the correct syntax to copy all elements of arr1 array into another array ?
+
+int arr1[]={1,2,3,4,5};
+
+1). int arr2 = Arrays.copy(arr1, 5);
+2). int arr2 = copyOf(arr1, 5);
+3). int arr2[] = Arrays.copyOf(arr1, 5);
+4). int arr2 [5] = arr1[5];
+Solution :
+option [3] is correct
+
+
+
+
+24. What is the output of the following code snippet ?
+
+public class PatternSample {
+      
+      public static void main(String[] args) {
+       String input = "Good Morning";
+       String pattern = "\\sGood\\sMorning\\s";
+       boolean flag = Pattern.matches(pattern, input);
+       System.out.println(flag);
+      }
+}
+
+1). TRUE
+2). FALSE
+Solution :
+option [2] is correct
+
+
+
+25. Fill in the blank :
+
+Array in Java is created as an __________.
+
+1). object
+2). derived data type
+3). primitive data type
+4). class
+Solution :
+option [1] is correct
+
+
+
+26. What will be the output of the program?   
+
+try  { 
+    int a = 0; 
+    int b = 4 / a; 
+} 
+catch (Exception e)  {
+    System.out.println("Exception"); 
+} 
+catch (ArithmeticException ae) {
+    System.out.println(" Arithmetic Exception"); 
+} 
+finally {
+System.out.println("Finished"); 
+}
+
+1). Exception
+Finished
+2). Arithmetic Exception
+Finished
+3). Finished
+4). Compilation fails
+Solution :
+option [4] is correct
+
+
+27. What is the Regular Expression  occurance character for matching Zero or More number of characters ?
+
+1). \
+2). $
+3). *
+4). ^
+Solution :
+option [3] is correct
+
+
+28. Consider the following code snippet :
+
+try { 
+int num = Integer.parseInt("Ten"); }
+
+Which type of exception should be caught in the catch block?
+
+1). ClassCastException
+2). IllegalStateException
+3). NumberFormatException
+4). None of the above is true
+Solution :
+option [3] is correct
+
+
+
+29. Consider the following code snippet :
+
+try { 
+int num = Integer.parseInt("Ten"); }
+
+Which type of exception should be caught in the catch block?
+
+1). ClassCastException
+2). IllegalStateException
+3). NumberFormatException
+4). None of the above is true
+Solution :
+option [3] is correct
+
+
+
+30.Fill in the blank to execute it successfully to give the output as "stitch in time saves nine."
+
+public class PatternExample
+{
+    private static String exp = "conserves";
+    private static String str1 = "stitch in time conserves nine.";
+    private static String str2 = "saves";
+
+    public static void main(String[] args) {
+        ________________________
+       
+       Matcher m = p.matcher(str1); 
+       str1 = m.replaceAll(str2);
+       System.out.println(str1);
+   }
+}
+
+1). Pattern p = Pattern.compile(exp);
+2). Pattern p = Pattern.test(exp);
+3). Pattern p = Pattern.matches(exp);
+4). Pattern p = new Pattern(exp);
+Solution :
+option [1] is correct
+
+
+31. What will be the output of the following code snippet?    
+
+String a = "Hello"; 
+int b = 4; 
+int c=5
+System.out.println(a + (b + c));
+
+1). Hello+45
+2). Hello45
+3). Hello9
+4). Hello+9
+Solution :
+option [3] is correct
+
+
+
+32. Fill in the blank :
+
+________ is used when you want a collection with no duplicates and you do not care about the order 
+when you iterate through it.
+
+1). HashSet
+2). TreeSet
+3). ArrayList
+4). HashMap
+Solution :
+option [1] is correct
+
+
+33. Which of the following methods of the File class will delete a directory or file?
+
+1). The file class does not allow you to delete a file or directory
+2). remove()
+3). delete()
+4). deleteFile()
+Solution :
+option [3] is correct
+
+
+34. Consider the following code snippet :
+
+Path file = Paths.get("D:/demo.txt");
+  List<String> lines = Files.readAllLines(file);
+  for(String line:lines) {
+   System.out.println(line);
+  }
+  System.out.println("End of File...."); 
+
+What will be the output  if the file is empty?
+
+1). IOException
+2). null
+3). no output
+4). End of File....
+Solution :
+option [4] is correct
+
+
+35. Which class allows you to grow dynamically and provides more poweful insertion and 
+search mechanisms than arrays ?
+
+1). Enumeration
+2). Iterator
+3). ArrayList
+4). Vector
+Solution :
+option [3] is correct
+
+
+
+36. What is the output of the following code snippet ?          
+
+public static void main(String[] args){
+  TreeMap tree = new TreeMap();
+  tree.put("one", 1);
+  tree.put("two", 2);
+  tree.put("three", 3);
+  tree.put("four", 4);
+  System.out.println(tree);
+ }
+
+1). {one=1, two=2, , three=3, four=4}
+2). {four=4, one=1, three=3, two=2}
+3). {1=one, 2=two, 3=three, 4=four}
+4). {4=four, 1=one, 3=three, two=2}
+Solution :
+option [2] is correct
+
+
+
+37. What is the output of the following code snippet ?          
+
+1. public static void main(String[] args){
+2. Set s = new TreeSet();
+3. s.add("red");
+4. s.add("green");
+5. s.add("grey");
+6. for(Object ele:s) 
+7.    System.out.println(ele);
+8.}
+
+1). green
+grey
+red
+2). red 
+green
+grey
+3). grey
+green
+red
+4). Exception
+Solution :
+option [1] is correct
+
+
+38. State TRUE or FALSE :
+
+A program uses an input stream to read data  from destination, one item at a time.
+
+1). TRUE
+2). FALSE
+Solution :
+option [2] is correct
+
+
+
+39. FileReader f=new FileReader("demo");
+
+Which checked  exception  is thrown by above statement?
+
+1). RunTimeException
+2). FileNotFoundException
+3). EOFException
+4). InterruptedException
+5). No Exception
+Solution :
+option [2] is correct
+
+
+
+40. Which interface is used to sort the elements of an Array or a list in th required way ?
+
+1). java.util.Comparator
+2). java.util.Collection
+3). java.util.List
+4). java.util.Map
+Solution :
+option [1] is correct
+
+
+
+41. Fill in the blank :
+
+A _______ comprises of multiple tests and is a convenient way to group the tests, which are related.
+
+1). testclass
+2). testcase
+3). testsuite
+4). testgroup
+Solution :
+option [3] is correct
+
+
+
+42. Fill in the blank :
+
+_______ is a technique in which you write unit tests before writing the application functionality.
+
+1). Unit Testing
+2). @before
+3). Test Driven Development
+4). @Test
+Solution :
+option [3] is correct
+
+
+
+43. Which of the following annotations are used to run test suite?
+
+1). @With and @TestSuite
+2). @RunWith and @Suite
+3). @Run and @Suite
+4). @TestWith and @RunSuite
+Solution :
+option [2] is correct
+
+
+
+44. Which of the following are the assertion methods in Junit?
+
+1). assertContentEquals()
+2). assertEquals()
+3). Fail()
+4). assertNVL()
+Solution :
+option [2,3] are correct
+
+
+
+
+45. Fill in the blank :
+
+The following advantages belong to _________.
+
+1. You get the ability to test code that is not yet written.
+2. They help to write focused tests that will test only a single method.
+3. They are helpful when the application integrates with expensive external resources.
+
+1). Parameterized tests
+2). SuiteClass
+3). Unit testing
+4). Mock Object
+Solution :
+option [4] is correct
+
+
+
+46. @Test(expected=IOException.class)
+     public void foo() throws IOException
+     {
+          try
+          {
+           System.out.format("%d",1/0);
+          }
+          catch(ArithmeticException e)
+          {
+           throw e;
+          }
+     }
+
+Select the correct option for this code.
+
+1). Test passes successfully
+2). Test Fail
+3). Test passes successfully if annotation is replaced 
+by @Test(expected=ArithmeticException.class)
+4). Test would be correct if it would have been catch(IOException e)
+Solution :
+option [3] is correct
+
+
+
+
+47. What is the use of @Test annotation? 
+
+1). Used to signify a method is a test method
+2). Cleanup task after each test is executed
+3). To ignore the test method
+4). Execute task before start of tests
+Solution :
+option [1] is correct
+
+
+
+48. Which of the following statements are true about JUnit?
+
+1). It is not possbile to follow TDD with Junit
+2). In JUnit4.x, Annotations are available  for initialization and 
+cleanup : @Before, @After
+
+3). Junit framework is not open source therefore it is expensive.
+4). In JUnit 4.x, you have to import org.junit.*
+
+Solution :
+option [2,4] are correct
+
+
+
+
+49. Which of the following annotation allows to run the same test with different data?
+
+1). Annotate class with @RunWith(Parame.class)
+2). Annotate class with @RunWith(Parameterized.class)
+3). Annotate class with @RunWith(Parameter.class)
+4). Annotate class with @RunWith(MultipleParam.class)
+Solution :
+option [2] is correct
+
+
+
+
+50. Why do we need to conduct unit testing in isolation ?
+
+1). Use a real database
+2). Use expensive or a difficult resource
+3). Use mock objects
+4). To avoid the use of expensive resources
+Solution :
+option [3,4] are correct
+</p></body>
+</html>

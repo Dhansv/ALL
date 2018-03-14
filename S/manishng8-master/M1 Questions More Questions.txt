@@ -1,0 +1,124 @@
+OOPS AND UML
+
+1). Relationship b/w father and son class??
+ans:Generalization(Inheritence)
+
+
+2). Are not true wrt instance variable?(MR)
+ans: 1)They compromise of all static variable in he class
+     3)They can not be initialized in the constructor
+
+3). True about exception handling?
+ans: 1)provide meaningfull error msgs.
+     2)Separate error handling code and regular code.
+
+4). Is true in case of exhaustive testing??
+ans: Is impractical and not economical wayable.
+
+///5). Correct exapmle of good programming practices?
+ans:
+
+Marked As Most Important *** Que on expiloritary testing ?(8 question most important)***
+
+  ****TESTING CONCEPTS****
+///1.True in explioratry testing 
+///2. match the following maximize bug count 
+///3. artifacts produced during test plan
+///4. static tool match the following
+///5. which tool 
+///6.the mean by which data is passed?
+///7.testing continues till the  (match the following)
+
+  ****RVFD(5)  DFDR(4)  use case(2)****
+
+///Fill in the blanks
+1) according to the CHAOS report _____ is the main reason that contributes to 30% of req error in the initial phase of SDLC
+Ans: Undocumented Assumptions
+
+2) Term for describing particular scenario??
+	Banking system allow receiving funds txn alerts viewing balance etc....	
+Ans:Features of the system
+
+3) Fill in the balanks 
+____ type of requirements includes checking that the system should be able to search at the most 100 concurrent users.
+Ans: Non functional req
+
+4) Identify type of req.
+the sysytem should  be functional on both old and new servers and space should be maintained ____
+
+Ans: Physical Constraints.
+
+5) Method to control Req Creep
+Ans: 1,3
+use prototyping
+use jad joint application development sessions
+
+6) Severity and priority
+Jitu is Hr Executive and he usese recruiment website to hire final year student after their exam in april
+Website down time issues in the first month of the year
+Ans: High Severity Low Priority
+
+7) identify defect status when defect is logged and yet to be assigned to the user
+ans: new
+
+8) scenario** testing done to avoid this 
+Hacker hacked into uS govt computers within defense dept and defers govt website?
+Ans: Security testing
+
+9) Identify Defect management tool from the below description??? 
+Sporting a number of advanced tool ....this defect tracking tool is defenitely..
+Ans:BugZilla
+
+10) Fill in he blanks
+_____ describe logical interaction b/w actor and the system
+Ans: Use Case
+
+11)In the ATM machine vineta checks for balance then withdraw money.
+Ans: Alternate Flows
+
+
+
+*****Discuss 5 more ,take next 20 minutes around 6:20 we can talk******
+
+Intro To Use Cases
+
+1) an example of actor (MR)
+Ans: Web client and customer
+
+2) Identify the usecase from online shop scenario
+ user enter the link .... register and buy...get valid user name and pwd... entert ID PWD...system validated ID PWD...if valid buy items make payment!!
+Ans: log in ...user reg ...buy item...make payment
+
+*** 2 More Question we are discussing
+
+3) in a movie ticket app,,succesfully book 2 tickets after filling details ...which type of validation above scenario comes??
+Ans:Use Case level Testing
+
+
+4)Identify actor in below scenario??
+library management system used by librarian ...student... library clerk
+Ans: librarian ...student... library clerk
+
+
+***Pseudo Code some more Questions****
+
+1) write way of writing pseudocode with naming convention??
+Ans:**Check Keywords are capital** small variable
+
+2) black box testing technique select any two?
+Ans: Ep 
+     Error guessing
+
+3) which of the following shows the purpose of defensive programming?(MR)
+Ans:1)Ensure program never returns inaccurate result. 
+    2)Abnormal termination is avoided
+
+*****TIME 6:20*****
+4) Which of the following is true UML diagram??
+Ans: Deployment diagram 	
+
+5)In online shopping application objects from difernt classes communicate with each other.This communication is known as?
+Ans: Messaging	
+
+*****TIME 6:24*****
+.....Oracle Web Basics Not discussed....Give more focus.....

@@ -1,0 +1,279 @@
+1.final modifier in java prevent
+
+
+2.correct way to declare method???
+ans: all of the above.
+
+
+3.not  checked exception?? (mr)
+
+a)io exception
+b)sql exception
+c)arithmetic exception
+d)null pointer exception
+
+ans:c) arithmetic exception
+    d)null pointer exception
+
+
+4.o/p of the following code?
+
+interface my interface()
+{
+	integer a =40;
+	void predict();	
+	{
+		class my class implements my interface;
+		{
+			public void predict i++;
+		}
+	}
+}
+a)a will be 41
+b)a will be 42
+c)compilation error 
+d)compilation error as a is constant and value can not be modified.
+
+ans:  compilation error as a is constant and value can not be modified in my class
+
+
+5. o/p of following code??
+
+map <integer,string> p=newhashmap<integer,string>
+p.put(20,"duster")
+p.put(20,"duster")
+p.put(40,"Pen")
+p.put(40,"pen")
+p.put(20,"eraser")
+sysout println("empty.size");
+
+ans: 2
+
+6. correct way to declare abstract method in abstract java class??
+ans: public abstract void display()
+
+7. not true for abstract class?
+ans: can not have concrete methods
+     can not have sub classes
+
+8. STUDENT ATTENDACE SYSTEM SCENARIO?? (null value exception)
+ans: this will throw unchecked exception.
+
+9. class manish{
+public static void main(){
+try{
+	integer x=8/0
+   }
+catch(null pointer exception null x)
+	{
+		system.out.println("Null ptr exception")
+	}
+finally{
+system("finally block");}
+	}
+}
+}
+
+ans: finallty block and arithmetic exception is thrown at runtime;
+
+
+10: 1 try 2 catch block 1 for sql exc 1 for io exc finalyy block follows catch exction...o/p of scenario
+ans: c)when exception is thrown sql exception block will be executed followed by finally block;
+
+11. java programmer wants to allow communication Remote Method Invocation...() for this what he has to do??
+ans:Use object serialization by creating a class which implements a serilizable interface.
+
+////12.how do u test the exception thrown by following method in J Unit?
+	public void result () 
+	{
+	   int result = 5/0;
+	}
+ans: annotate the test method as follows
+	arithmetaic expression.class;
+
+////13. public class Manish
+{
+@Test
+public void getdetail();
+@Ignore
+@Test
+expected=class cas exception.class
+public void enter details{}
+}
+
+Ans: 1 test case will executed
+
+14;how many times folloeing method executed in JUnit???
+@before
+public void method()
+{
+	system.out.println("method1");
+}
+
+ans: once before every test in a class;
+
+////15:write o/p
+array list string a = new arraylist()
+<array list>
+contents of al??
+ans: -30,30,40,Manish(class name)
+
+16. O/P of the following code??
+tree set tree =  new treeset();
+tree.add Apple;
+tree.add ball;
+tree.add Ball;
+tree.add apple;
+tree.add ape;
+system.out.println(tree);
+
+ans:Apple,Ball,ape,apple,ball
+
+17.pick up true about java collection???? (MR)
+ans:a,c
+maps store object in the form of key value pair
+c) set does not permit duplicate entey.
+
+18.(Scenario) Java deveplore wants to hold the collection of object with no duplicate entry... Which collection class is suitable for this scenario??
+ans: hash map
+
+19. default value assigned for folloeing array element??
+boolean[]status=new boolean [2];
+ans:false
+
+20.Code:
+class A
+{
+	public static void main(){
+	integer num1=0;
+	integer num2=10;
+	do
+	num2--;	
+	++number1:
+	while(num1<5)
+	{
+		system.out.println(num1,""+num2);
+	}
+   }
+}
+ans:5 5
+
+21.Hema wants only subclasses in the package.... which is suitable modifier???
+ans:protected
+
+22.Import keyword used for which of the following purpose?
+ans:import both built in package and user defined package in java source file. 
+
+23.which is the correct way of writing the gatter method of java bin property "city" of string data type?
+ans: string get city();
+ 
+24.which of the following is not a wrapper class?
+ans:vector
+
+25.consider the following scenarion
+in a faculty management system name is searched by...what is true about this scenario?
+ans:unchecked exception
+
+26.java programmer is creating checked exception Purchase order exception....pre defined class need to be inherited to make it as unchecked exception
+ans: runtime exception
+
+
+27.Public class A {
+public static void main{
+try{
+	sysprln(int.parslnt,"A90")
+   }
+catch{
+arithmetic exception (array index out of bound exception E)
+{
+syspln("catch block 1")}
+}
+catch number format exception{
+syspln("catch block 2")
+}
+catch exception E
+{
+ syspln("catch block 3")
+}
+}
+}
+ans:catch block 2
+
+
+28.can data flow in a given io stream in both the direction?
+ans:No, stream has 1 direction only either input or output.
+
+
+/////29.Scenario
+Consider the test cases given in the option
+which of the following is correct valid jUnit test case for Testing exception?
+@Test 
+{
+	arithematic expression.class
+	1/0
+}
+@TEst
+{
+	expected=
+	1/0
+}
+
+ans: @TEst
+{
+	expected= arithmeatic exception.class
+	1/0
+}
+
+
+30.which of the below test method will fail??
+public class M
+{
+	@TEST
+	public void test1 (assert=(23,integer.parsint("23")))
+	@TEST
+	public void test2 (assert="Two",two,fail("Test Fails"))
+}
+ans: test 2 mehod fails
+
+31.which code for test failing in test take longer than 1 seconds?
+ans:@TEST(timeout=1000)
+
+
+32.hashmap map =new hashmap;
+map.put(J,"Gulam")
+map.put(J,"Rani")
+map.put(J,"Null")
+map.put(K,"Null")
+map.put(K,"Raja")
+ans:3
+
+33.Which statement should be inserted at line 6 to sort the name of the array list??
+array list subject = new arraylist;
+subject.add(eng)
+subject.add(physics)
+subject.add(maths)
+subject.add(science)
+6.______________________
+ans:collections.sort(subject)
+
+34.Pick up the true statement related to array and array list? (MR)
+ans:1)array is statci and array list is dynamic
+2)array and array list both of them allow duplicate values.
+
+35.predict the o/p of the following code
+set(string ts = new tree set<string>)
+string v["1","3","1","2"]
+for (int i<0;;i++)
+{
+	ts.add=v(i);
+	iterator it = ts.iterator
+	while(it.hasnext)
+	{
+	print(it.next)
+	}
+}
+ans: 1 2 3
+
+36.state true or false:
+hash table does not allow null values in  keys as well as in values?
+ans:True.

@@ -1,0 +1,1468 @@
+<html>
+<body>
+<p>
+
+
+
+INTRODUCTION TO SOFTWARE ENGINEERING
+
+1.Which of the following is NOT a function of software configuration management ?
+
+1). Change Control
+2). Status accounting of change
+3). Risk analysis
+4). Customer queries
+5). Version control
+Solution :
+option [3,4] are correct
+
+
+2.Which are not phases of SDLC ?
+
+1). Design
+2). Customer satisfaction
+3). Customization
+4). Coding
+Solution :
+option [2,3] are correct
+
+3.Which are NOT the activities of Requirements phase ?
+
+1). Requirement gathering
+2). Finalize Acceptance Criteria
+3). Go / No Go decision
+4). Requirement Simulation
+5). Documentation of requirements
+Solution :
+option [3,4] are correct
+
+4.Complete the following:
+
+A set of  processes, standards and tools used to develop, alter software in a optimal manner 
+is called as _________.
+
+1). STLC
+2). Best software practice
+3). Systems Development Life Cycle
+4). Verification
+Solution :
+option [3] is correct
+
+5.Complete the following : 
+
+A Software capability needed by the User to solve a problem to achieve an objective is called _______.
+
+1). Solution
+2). Requirement
+3). Usability
+4). Quality Assurance
+5). Quality Control
+Solution :
+option [2] is correct
+
+6.State whether True or False :
+
+A single baseline may contain many files.
+
+1). FALSE
+2). TRUE
+Solution :
+option [2] is correct
+
+7.Complete the following :
+
+______ deals with non-functional requirements whereas _______ deals with functional requirements.
+
+1). Design, Architecture
+2). Architecture, Design
+3). SRS, Design
+4). Client, SRS
+Solution :
+option [2] is correct
+
+8.White box testing includes:
+
+(i) Unit Testing  
+(ii) System Testing   
+(iii) Testing all input data
+(iv) Testing loops, internal logic 
+
+1). i,ii,iv
+2). i,iv
+3). i,iii
+4). i,iii,iv
+Solution :
+option [2] is correct
+
+9.In which phase, activities like knowledge transfer, end user training, project signoff are done ?
+
+1). Before Acceptance Testing
+2). After Acceptance Testing
+3). During Acceptance Testing
+4). After Requirement Analysis 
+Solution :
+option [2] is correct
+
+
+10.Complete the following :
+
+_________ includes a detailed  plan drawn to transfer all the necessary information from 
+earlier vendor of the customer including  Documents, lessons learnt, service status etc.
+
+1). Requirement transfer
+2). Document plan
+3). Knowledge transition
+4). Knowledge plan
+Solution :
+option [3] is correct
+
+11.What are the various reasons for the modification of software ?
+
+1). Corrective
+2). Perfective
+3). Adaptive
+4). All of the mentioned
+Solution :
+option [4] is correct
+
+12.Complete the following sentence:
+
+_________ is called as internal acceptance testing.
+
+1). Beta testing
+2). Alpha testing
+3). Maintenance testing
+4). Usability testing
+Solution :
+option [2] is correct
+
+13.Which of the  following three principles that enable Agile methodology to be effective and light weight ?
+
+1). Communication 
+2). Simplicity
+3). Early delivery
+4). Feedback
+5). Totally defect free
+Solution :
+option [1,2,4] are correct
+
+14.Consider a system where, a heat sensor detects an intrusion and alerts the security company. 
+What kind of a requirement the system is providing?
+
+1). Functional Requirement
+2). Non-Functional Requirement
+3). Known Requirement
+4). Unknown Requirement
+Solution :
+option [1] is correct
+
+15.In which model, a list of "approved changes" are identified by management using various cost effective strategies, 
+which are then executed based on the budgets and resources ?
+
+1). Cost Effective Model
+2). Bohem’s Model
+3). Enhancement Model
+4). None of the options
+Solution :
+option [2] is correct
+
+
+
+
+
+16.Complete the following :
+
+The main  line of development is called _______ , whereas a _________ is a side line of a development.
+
+1). Version, Trunk
+2). Trunk, Branch
+3). Branch, Side branch
+4). Branch, Leaf
+Solution :
+option [2] is correct
+
+17.Complete the following :
+
+To check whether we are developing the right product according to the customer requirements are not. 
+It is called ____________.
+
+1). Verification
+2). Validation
+3). Customer satisfaction
+4). Customer delight
+Solution :
+option [2] is correct
+
+18.Match the following :
+
+1. Sales and Initial planning
+2. Create Test Strategy
+3.  Analyze & Design Test ware
+4.  Test Execution & Analysis
+
+A. Set-up Environment 
+B. Execute tests and coordinate with development team
+C. Identify Requirements
+D. Develop Project Plan & test strategy
+
+1). 1-A, 2-D, 3-C, 4-B
+2). 1-D, 2-C, 3-B, 4-A
+3). 1-B, 2-C, 3-A, 4-D
+4). 1-C, 2-D, 3-A, 4-B
+Solution :
+option [4] is correct
+
+
+19.Complete the following :
+
+Variance from product specifications is called ________.
+
+1). Variation
+2). Defect
+3). Risk
+4). SRS
+Solution :
+option [2] is correct
+
+20.Complete the following :
+
+Sales & initial planning includes the following:
+
+1). Effort estimates
+2). Milestones
+3). Environment setup
+4). Cost estimates
+Solution :
+option [1,4] are correct
+
+21.Complete the following:
+
+The configuration of test environment is detailed in the __________.
+
+1). Configuration plan
+2). Configuration tool
+3). Defect report
+4). Test Strategy
+Solution :
+option [4] is correct
+
+22.Which statement is true about Test ware ?
+
+1). Needs configuration management just like requirements, design and code
+2). Should be newly constructed for each new version of the software
+3). Is needed only until the software is released into production or use
+4). Does not need to be documented and commented, as it does not form part of the released software system
+Solution :
+option [1] is correct
+
+23.What are the documents that provides information to the development team/client on the quality of the product, 
+stating the risks and issues faced during testing?
+
+1). Defect report
+2). Client report
+3). Quality report
+4). All of the options
+Solution :
+option [1,2] are correct
+
+24.In which phase, there will be brain storming sessions with other teams and we try to find out 
+whether the requirements are testable or not ?
+
+1). Test strategy
+2). Requirement analysis
+3). Sales & initial planning
+4). Test Design
+Solution :
+option [3] is correct
+
+25. Complete the following :
+
+For data migration testing, data to be migrated has to be identified along with _________ and __________.
+
+1). Future relationships, business rules
+2). Existing relationships, business rules
+3). Databases, tables
+4). None of the options
+Solution :
+option [2] is correct
+
+26.Complete the following :
+
+In ________ testing, the threat maps will be populated that will show the coverage of threats tested for.
+
+1). Threat 
+2). Protective
+3). Security
+4). Map
+Solution :
+option [3] is correct
+
+27.Select 3 roles, who will NOT review the environment installation for completion?
+
+1). Tester
+2). Test Manager
+3). IT support team
+4). Project Manager
+Solution :
+option [2,3,4] are correct
+
+28.Who integrates all testing activities identified into the creation of phase one project plan ?
+
+1). Project Manager
+2). Business Analyst
+3). Tester
+4). Test Manager
+Solution :
+option [4] is correct
+
+29.State True or False :
+
+STLC is the preprocess, the process and post process involved in testing the Product.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+30.Complete the following :
+
+A tester will update actual result during _________ and expected result during _________ in a test case.
+
+1). Test design, Test execution
+2). Test execution, Test design
+3). Defect reporting, Test design
+4). Defect reporting, Test execution
+Solution :
+option [2] is correct
+
+
+
+
+
+
+
+ADVANCED SELENIUM
+
+1) Suppose Vimal wants to use selenium to test website in a headless browser, 
+which component, he should use?
+
+1). Selenium IDE
+2). Selenium Webdriver
+3). Selenium RC
+4). All the options
+Solution :
+option [2] is correct
+
+2)_____________ supports parallel test execution.
+
+1). Selenium IDE
+2). Selenium Grid
+3). Selenium RC
+4). Selenium Webdriver
+Solution :
+option [2] is correct
+SELENIUM
+
+
+3)State True or False:
+
+Automation testing can completely replace manual testing.
+
+1). TRUE
+2). FALSE
+Solution :
+option [2] is correct
+
+4)Select the options, when automation testing is preferred?
+
+1). Data-driven testing
+2). Usability testing
+3). Regression testing
+4). Testing a software in multiple platforms
+Solution :
+option [1,3,4] are correct
+
+5)__________  has a context menu (right-click) integrated with the Firefox browser, which allows 
+the user to pick from a list of assertions and verifications for the selected location.
+
+1). Selenium IDE
+2). Selenium Grid
+3). Selenium RC
+4). Selenium Webdriver
+Solution :
+option [1] is correct
+
+6)Latest version of Selenium IDE supports ________ browser to create and execute test cases.
+
+1). Google Chrome
+2). Internet Explorer
+3). Mozilla Firefox
+4). All the options
+Solution :
+option [3] is correct
+
+7)___________ testing helps to easily focus on all possible workflows.
+
+1). Manual
+2). Automated
+3). Extreme
+4). All the options
+Solution :
+option [2] is correct
+
+
+8)_________ implements a more modern and stable approach in automating the browser's actions.
+
+1). Selenium IDE
+2). Selenium Grid
+3). Selenium RC
+4). Selenium Webdriver
+Solution :
+option [4] is correct
+
+9)State True of False:
+
+Selenium can use other programming languages, other than Java.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+10)VeeTotal is an online web application, used by a US client & he uses Mac OS as well as Windows OS. 
+If you want to run tests parallely on both the OS, which selenium component you will prefer?
+
+1). Selenium IDE
+2). Selenium Webdriver
+3). Selenium Grid
+4). Selenium RC
+Solution :
+option [3] is correct
+
+11) State True or False:
+
+Speed control is used to control how fast your test case is recorded.
+
+1). TRUE
+2). FALSE
+Solution :
+option [2] is correct
+
+12)_________ allows to create new test case, open existing test case, save the current test case.
+
+1). Testcase Menu
+2). File Menu
+3). Actions Menu
+4). Tools Menu
+Solution :
+option [2] is correct
+
+13)Carol is testing an real estate web application in Selenium IDE. 
+Where she has to view the error messages and information messages?
+
+1). Exceptions
+2). Reference
+3). Console
+4). Log
+Solution :
+option [4] is correct
+
+14) What is Selenium IDE ?
+
+1). Windows software
+2). Firefox plugin
+3). Java software
+4). Flash plugin
+Solution :
+option [2] is correct
+
+15)What kind of applications can Selenium IDE test?
+
+1). DOS applications
+2). Browser based applications
+3). GUI applications
+4). All of the options
+Solution :
+option [2] is correct
+
+16)_________ is an advanced feature in Selenium IDE that allows repetitive sequences of 
+Selenium commands to be grouped into a single action.
+
+1). Selenium Grid
+2). Stepup Rules
+3). Rollup Rules
+4). Test Script
+Solution :
+option [3] is correct
+
+17)What are the 3 components of the test case table in Selenium IDE ?
+
+1). Command
+2). Action
+3). Target
+4). Value
+Solution :
+option [1,3,4] are correct
+
+18)By default, Selenium tests are saved in _________ format.
+
+1). Text
+2). HTML
+3). Encoded
+4). Java
+Solution :
+option [2] is correct
+
+19)Anand is testing page title in the webpages of a banking portal by using storeTitle 
+& echo commands. According to you, command 'storeTitle' is a ___________.
+
+1). Action
+2). Accessor
+3). Assertion
+4). Target
+Solution :
+option [2] is correct
+
+20)Which Selenium command check whether specific text exists on the web page?
+
+1). verifyTextPresent
+2). verifyPresentText
+3). 
+verifyTextExist
+4). 
+verifyExistText
+Solution :
+option [1] is correct
+
+21)WebDriver is faster than Selenium RC due to __________.
+
+1). Support for Java programming language
+2). Simpler architecture
+3). Support for multiple browsers
+4). All the options
+Solution :
+option [2] is correct
+
+22)_________ supports the headless HtmlUnit browser.
+
+1). Selenium IDE
+2). Selenium Webdriver
+3). Selenium RC
+4). All the options
+Solution :
+option [2] is correct
+
+23)Select the correct WebDriver scripts, using locators.
+
+1). WebElement CheckElements = driver.findElements(By.cssSelector("input[id=email']"));
+2). WebElement classtest =driver.findElement(By.className("sample"));
+3). WebElement Ele = driver.findElement(By.idName("toolbar"));
+4). WebElement download = driver.findElement(By.linkText("Downloads"));
+Solution :
+option [1,2,4] are correct
+
+24)State True or False :
+
+The choice of locator depends largely on your Application Under Test.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+25)____ command retrieves the message of the alert and checks if it is equal to the expected 
+string value, followed by execution of the next test step.
+
+1). verifyAlertPresent
+2). assertAlertPresent
+3). assertAlert
+4). verifyAlert
+Solution :
+option [4] is correct
+
+26)In Selenium IDE, Action is used to change the _____ of AUT (Application Under Test)
+
+1). Source code
+2). Accessor
+3). State
+4). Command
+Solution :
+option [3] is correct
+
+27)Select the correct WebDriver script to view page source.
+
+1). String sourcePage = driver.getSourcePage();
+2). String pageSource = driver.viewSource();
+3). String pageSource = driver.getPageSource();
+4). All the options
+Solution :
+option [3] is correct
+
+28)What are the formats in which test cases can be exported in Selenium IDE ?
+
+1). .net
+2). .java
+3). .py
+4). .rb
+Solution :
+option [2,3,4] are correct
+
+29)__ is a web automation framework that allows you to execute your tests against 
+different browsers, not just Firefox.
+
+1). Selenium Grid
+2). Selenium IDE
+3). Selenium WebDriver
+4). Selenium RC
+Solution :
+option [3] is correct
+
+30)In Selenium IDE, core engine is ____________.
+
+1). Java script
+2). VB script
+3). Selenese Script
+4). None of the options
+Solution :
+option [1] is correct
+
+
+
+31. In WebDriver, ___________ command is used to go to the previous web page in the browser, 
+without using URL.
+
+1). driver.navigate().previous();
+2). driver.back.navigate();
+3). driver.navigate().back();
+4). driver.previous.navigate();
+Solution :
+option [3] is correct
+
+32. State True or False :
+
+In the following code snippet , implicit wait is used.
+
+WebDriverWait wait = new WebDriverWait(driver, 30);
+wait.until(ExpectedConditions.presenceOfElementLocated(by));
+
+1). TRUE
+2). FALSE
+Solution :
+option [2] is correct
+
+33. State True or False :
+
+In webdriver, selectAllOptions() is a valid command.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+34. In WebDriver, which of the following is a valid select statement that selects a value from 
+a drop down element?
+
+1). selectByIndex()
+2). 
+selectByVisibleText()
+3). selectByValue()
+4). All of the Above
+Solution :
+option [4] is correct
+
+35. In WebDriver, which of the following commands retrieves the text of a html element?
+
+1). selectText()
+2). getText()
+3). getElementText()
+4). getText(WebElement)
+Solution :
+option [2] is correct
+
+36. State True or False:
+
+driver.getPageSource() is used to get the source code of the page.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+37. In WebDriver, which command can be used to enter values in text boxes?
+
+1). selenium.type()
+2). driver.type("text")
+3). sendKeys()
+4). sendKeys("text")
+Solution :
+option [4] is correct
+
+38. What is the output of the following code ?
+
+driver.get("https://www.google.com");
+boolean title = driver.getTitle().contains("Google");
+System.out.println(title);
+
+1). Google
+2). TRUE
+3). Title
+4). None of the options
+Solution :
+option [2] is correct
+
+39. _________ is used to locate single element and return WebElement object of first occurrences 
+element on web page.
+
+1). findElement
+2). locateElement
+3). searchElement
+4). findWebElement
+Solution :
+option [1] is correct
+
+40. State True or False :
+
+Eclipse IDE is used to create  test scripts in any programming language.
+
+1). TRUE
+2). FALSE
+Solution :
+option [2] is correct
+
+
+41. ________ function sets the value property of the element to an empty string.
+
+1). clear()
+2). reset()
+3). clean()
+4). None of the options
+Solution :
+option [1] is correct
+
+42. ________method selects the option which displays the text matching the parameter passed to it.
+
+1). selectVisibleText()
+2). selectByVisibleText()
+3). select_VisibleText()
+4). select_ByVisibleText()
+Solution :
+option [2] is correct
+
+43. State True or False:
+
+In WebDriver, it is possible to locate link elements whose visible text contains the given substring.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+44.  _______ is a collection of factory functions for creating webdriver.Locator instances.
+
+1). Locator
+2). By
+3). WebDriver
+4). Selector
+Solution :
+option [2] is correct
+
+45. In WebDriver, what is the correct code that checks whether an element is in enabled state or not?
+
+1). driver.get("http:/google.com");
+boolean i = driver.findElements(By.linkText("Gmail")).isEnabled();
+System.out.println (i);
+2). driver.get("http:/google.com");
+boolean i = driver.findElement(By.enabled("Gmail"));
+System.out.println(i);
+3). driver.get("http:/google.com");
+boolean i = driver.findElement(By.linkText("Gmail")).isEnabled();
+System.out.println(i);
+4). driver.get("http:/google.com");
+boolean i = driver.isEnabled().By.linkText("Gmail"));
+System.out.println(i);
+Solution :
+option [3] is correct
+
+46. Select the method which clears all selected entries in WebDriver:
+
+1). dselectAll()
+2). deselect_All()
+3). dselect_All()
+4). deselectAll()
+Solution :
+option [4] is correct
+
+47. When we don't have an option to choose Id or Name,which locators, we should prefer, 
+as the best alternative in WebDriver ?
+
+1). XML
+2). CSS
+3). By
+4). Xpath
+Solution :
+option [2,4] are correct
+
+48. Complete the following: 
+
+The following code snippet is used for __________ type of web element.
+WebElement element=driver.findElement(By.name("Mobiles")); 
+Select se=new Select(element); 
+se.selectByIndex(1);
+
+1). Radio buttons
+2). Drop down list
+3). Button
+4). Text box
+Solution :
+option [2] is correct
+
+49. What this following code snippet will do?
+
+WebElement citycheck = driver.findElement(By.name("Chennai")); citycheck.click(); 
+System.out.println(citycheck.isSelected()); 
+
+1). It will first click the checkbox named "Chennai" and then verifies whether it is clicked or not
+2). It will first click the checkbox named "Chennai" and then returns nothing.
+3). It will first identify & then click the checkbox named "Chennai" and then verifies whether 
+it is clicked or not.
+4). It will first identify & then click the checkbox named "Chennaind returns nothing
+Solution :
+option [3] is correct
+
+50. ___________ is NOT a wait command.
+
+1). waitForTitle
+2). waitForTextPresent
+3). waitForActive
+4). waitForAlert
+Solution :
+option [3] is correct
+
+
+51
+Q. Select the command which retrieves alert message and stores it in a variable that you will specify:
+
+1). storeAlert
+2). storedAlert
+3). store_Alert
+4). storesAlert
+Solution :
+option [1] is correct
+
+52
+Q. State True or False:
+
+Implicit wait time is applied to all elements in your script and Explicit wait time is applied 
+only for particular specified element.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+53
+Q. Which two commands you use to validate a button?
+
+1). verifyTextPresent & assertTextPresent
+2). verifyElementPresent & assertElementPresent
+3). verifyAlertPresent & assertAlertPresent
+4). verifyAlert & assertAlert
+Solution :
+option [2] is correct
+
+54
+Q. In regular expression, * refers to ____________.
+
+1). 0 or more of the preceeding character
+2). 1 or more of the preceeding character
+3). 0 or 1 of the preceeding character
+4). All the options
+Solution :
+option [1] is correct
+
+55
+Q. What does assertTitle checks?
+
+1). Element title
+2). Page title
+3). Block title
+4). Title of element under focus
+Solution :
+option [2] is correct
+
+56
+Q. Select the correct WebDriver script to make the script wait for 3 seconds:
+
+1). Webdriver driver = new FirefoxDriver();
+baseUrl = "http://w...content-available-to-author-only...a.org/";
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+2). Webdriver driver = new FirefoxDriver();
+baseUrl = "http://w...content-available-to-author-only...a.org/";
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.MILLISECONDS);
+3). Webdriver driver = new FirefoxDriver();
+baseUrl = "http://w...content-available-to-author-only...a.org/";
+driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+4). Webdriver driver = new FirefoxDriver();
+baseUrl = "http://w...content-available-to-author-only...a.org/";
+driver.manage().timeouts().implicitWait(3, TimeUnit.SECONDS);
+Solution :
+option [3] is correct
+
+57
+Q. By default, time of wait command is :
+
+1). 15 sec
+2). 20 sec
+3). 25 sec
+4). 30 sec
+Solution :
+option [4] is correct
+
+58
+Q. Select the correct WebDriver script to work with check boxes in a web page.
+
+1). List<WebElement> element = driver.findElements(By.name("chkHobbies"));
+
+for (WebElement webElement : element)
+{
+try
+{
+Thread.sleep(500);
+}
+catch(InterruptedException ex)
+{
+System.out.println(ex.getMessage());
+} 
+}
+2). List<WebElement> element = driver.findElements(By.name("chkHobbies"));
+
+for (WebElement webElement)
+{
+webElement.click();
+
+try
+{
+Thread.sleep(500);
+}
+catch(InterruptedException ex)
+{
+System.out.println(ex.getMessage());
+} 
+}
+3). List<WebElement> element = driver.findElements(By.name("chkHobbies"));
+
+for (WebElement webElement : element)
+{
+webElement.click();
+
+try
+{
+Thread.sleep(500);
+}
+catch(InterruptedException ex)
+{
+System.out.println(ex.getMessage());
+} 
+}
+4). List<WebElement> element = driver.findElement("chkHobbies"));
+
+for (WebElement webElement : element)
+{
+webElement.click();
+
+try
+{
+Thread.sleep(500);
+}
+catch(InterruptedException ex)
+{
+System.out.println(ex.getMessage());
+} 
+}
+Solution :
+option [3] is correct
+
+59
+Q. In WebDriver, which method closes the open browser?
+
+1). quit()
+2). terminate()
+3). shutdown()
+4). close()
+Solution :
+option [4] is correct
+
+60
+Q. Which is odd one out?
+
+1). ID
+2). Xpath
+3). CSS Selector
+4). Pattern Matching
+Solution :
+option [4] is correct
+
+61
+Q. In Selenium WebDriver, to click on ‘Cancel’/’No’ in an Alert  Box, we use _______.
+
+1). simpleAlert.dismiss()
+2). simpleAlert.close()
+3). simpleAlert.dismissAll()
+4). simpleAlert.cancel()
+Solution :
+option [1] is correct
+
+62
+Q. State True or False:
+
+submit() method Is very good alternative of .click() method.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+63
+Q. State whether True or False:
+
+In webdriver, deselectAll() is a valid command.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+64
+Q. ________are blocking in nature. They will not allow any action on the underlying 
+webpage if they are present.
+
+1). Windows
+2). Alerts
+3). Windows & Alerts
+4). None of the options
+Solution :
+option [2] is correct
+
+65
+Q. Select the correct WebDriver script for selecting, 'April 24' in the web page:
+
+1). WebElement u=driver.findElement(By.name("Date"));
+Select tu=new Select(u);
+tu.selectByIndex(24);
+WebElement b=driver.findElement(By.name("Month"));
+Select tb=new Select(b);
+tb.selectByIndex(4);
+2). WebElement u=driver.findElements(By.name("Date"));
+Select tu=new Select(u);
+tu.selectByIndex(24);
+WebElement b=driver.findElement(By.name("Month"));
+Select tb=new Select(b);
+tb.selectByIndex("April");
+3). WebElement u=driver.findElement(By.Date("Date"));
+Select tu=new Select(u);
+tu.selectByDate(24);
+WebElement b=driver.findElement(By.Month("Month"));
+Select tb=new Select(b);
+tb.selectByMonth(4);
+4). None of the options
+Solution :
+option [1] is correct
+
+66
+Q. Selenium will not be able to recognize __________ based alert popups.
+
+1). Web
+2). Window
+3). Source Code
+4). Window & Web
+Solution :
+option [2] is correct
+
+67
+Q. Select the correct WebDriver script for changing focus from parent window to popup window.
+
+1). String parentWindow = driver.getWindowHandle();
+driver.switch().window("PopupWindow");
+driver.close();
+2). String parentWindow = driver.getWindowHandle().toString();
+driver.switchTo().window("PopupWindow");
+driver.close();
+3). String parentWindow = driver.getWindow().toString();
+driver.switchTo().("PopupWindow");
+driver.close();
+4). String parentWindow = driver.WindowHandle().toString();
+driver.switchTo().handle("PopupWindow");
+driver.close();
+Solution :
+option [2] is correct
+
+68
+Q. ________ wait time is applied to all elements in your script and _________ wait time is applied 
+only for particular specified element.
+
+1). Particular, Implicit
+2). Explicit, Implicit
+3). Implicit, Particular
+4). Implicit, Explicit
+Solution :
+option [4] is correct
+
+69
+Q. Synchronization instructs Selenium to wait until element is in __________condition.
+
+1). Actual
+2). Expected
+3). Wait
+4). Stable
+Solution :
+option [2] is correct
+
+70
+Q. Each and every time when there is need to match speed of the application and speed of 
+test execution we have to use _________.
+
+1). sleep.Thread()
+2). wait.Thread();
+3). Thread.wait();
+4). Thread.sleep();
+Solution :
+option [4] is correct
+
+71
+Q. In TestNG, what annotations indicate that the method is a configuration method?
+
+1). @AfterMethod
+2). @BeforeGroups
+3). @BeforeMethod
+4). @AfterGroups
+Solution :
+option [2,4] are correct
+
+72
+Q. State True or False:
+
+JUnit is linked as a JAR at compile-time.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+73
+Q. How many times, the annotation @BeforeClass can be run in Junit class?
+
+1). It depends on the number of @Test methods
+2). Only once
+3). It depends on the number of @Before methods
+4). Any number of times
+Solution :
+option [2] is correct
+
+74
+Q. State True or False:
+
+Suppose @BeforeClass methods throws and exception, @AfterClass method will 
+not be executed.
+
+1). TRUE
+2). FALSE
+Solution :
+option [2] is correct
+
+75
+Q. In JUnit, what are the annotations used to run the suite test?
+
+1). @RunWith 
+2). @Suite 
+3). @RunSuite
+4). @Run
+Solution :
+option [1,2] are correct
+
+76
+Q. _________ method tests if two object references point to the same object.
+
+1). void assertSameObject(boolean condition)
+2). void assertSame(boolean condition)
+3). void assertSameReference(boolean condition)
+4). None of the options
+Solution :
+option [2] is correct
+
+77
+Q. Whenever ________ testcases are run, HTML and XML reports are generated by default 
+in the directory.
+
+1). Junit
+2). TestNG
+3). Junit or TestNG
+4). TestGN
+Solution :
+option [2] is correct
+
+78
+Q. Junit test reports are in __________ format.
+
+1). CSS
+2). XML
+3). HTML
+4). Java
+Solution :
+option [2] is correct
+
+79
+Q. Sometimes you want to temporarly disable a test or a group of test which annotation you should use?
+
+1). @disable
+2).@enable=false
+3). @ignore
+4). @dismiss
+Solution :
+option [3] is correct
+
+80
+Q. TestNG is better than JUnit, especially when testing __________.
+
+1). Individual classes
+2). Integrated classes
+3). Both Individual & Integrated classes
+4). None of the options
+Solution :
+option [2] is correct
+
+
+
+81.In _______, Server acts as a "middleman" between your Selenium commands and your browser.
+
+1). Selenium RC
+2). Selenium IDE
+3). Selenium WebDriver
+4). None of the options
+Solution :
+option [1] is correct
+
+
+82.Select the headless browsers from the below list:
+
+1). PhanthomJS
+2). Safari
+3). GhostDriver
+4). Opera
+Solution :
+option [1,3] are correct
+
+83.Which Selenium component allows for running your tests in a distributed test execution environment?
+
+1). Selenium IDE
+2). Selenium RC
+3). Selenium Grid
+4). Selenium WebDriver
+Solution :
+option [3] is correct
+
+84. _________ describes a series of key/value pairs that encapsulate aspects of a browser.
+
+1). DesiredCapabilities
+2). Capabilities
+3). Profile
+4). Profile setting
+Solution :
+option [2] is correct
+
+85.A Selenium Grid consists of a single hub, and one or more nodes. 
+Which is the correct statement to start hub in the command prompt?
+
+1). java -jar selenium-server-standalone-2.48.2.jar -role hub
+2). java selenium-server-standalone-2.48.2.jar -role hub
+3). java -jar selenium-server-standalone-2.48.2.jar -start hub
+4). java selenium-server-standalone-2.48.2.jar -start hub
+Solution :
+option [1] is correct
+
+
+86. State True or False:
+
+WebDriver is faster than Selenium RC.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+87.Select the bindings in Selenium architecture:
+
+1). Java
+2). Internet Explorer
+3). Ruby
+4). Python
+Solution :
+option [1,3,4] are correct
+
+88.When you want a crawler program that goes through different pages and collects data, 
+which browser you will select ?
+
+1). Phanthom JS
+2). Safari
+3). Internet Explorer
+4). Mozilla Firefox
+Solution :
+option [1] is correct
+
+89.Identify the correct Web Driver script for verifying title of the online shopping website 
+yourshoppee.com.
+
+1). WebDriver driver;
+driver.get("http://y...content-available-to-author-only...e.com/");
+if(driver.getTitle() = ("Welcome to yourshoppee")){ System.out.println("Title Verified");
+}
+else{
+System.out.println("Title Verification Failed");
+}
+
+2). WebDriver driver;
+driver.getURL("http://y...content-available-to-author-only...e.com/");
+if(driver.getTitle().equals("Welcome to yourshoppee")){ System.out.println("Title Failed");
+}
+else{
+System.out.println("Title Verification Verified");
+}
+
+3). WebDriver driver;
+driver.get("http://y...content-available-to-author-only...e.com/");
+if(driver.Title().equals("Welcome to yourshoppee")){ System.out.println("Title Verified");
+}
+else{
+System.out.println("Title Verification Failed");
+}
+
+4). WebDriver driver;
+driver.get("http://y...content-available-to-author-only...e.com/");
+if(driver.getTitle().equals("Welcome to yourshoppee")){ System.out.println("Title Verified");
+}
+else{
+System.out.println("Title Verification Failed");
+}
+
+Solution :
+option [4] is correct
+
+
+90.Select the two cross browser mobile automation tools:
+
+1). HtmlUnit
+2). Appium
+3). Selendroid
+4). Splash
+Solution :
+option [2,3] are correct
+
+
+
+91. In which type of framework, data is not hardcoded with script ,but data is provided from 
+external  source?
+
+1). Keyword-Driven Automation Framework.
+2). Hybrid Automation Framework.
+3). Component based framework(CBF)
+4). Data-Driven Automation Framework
+Solution :
+option [4] is correct
+
+92.Which is a development methodology based on communication between the business customers, 
+the developers, and the testers?
+
+1). Test Driven Development (TDD)
+2). 
+Acceptance TDD
+3). Business Driven Development
+4). 
+Communication Driven Development
+Solution :
+option [2] is correct
+
+93.Cucumber is a software tool that runs tests in _________ style.
+
+1). Test driven development
+2). Behavior driven development
+3). Documentation driven development
+4). All the options
+Solution :
+option [2] is correct
+
+94. In Component based framework, what is 'Harness'?
+
+1). General purpose runner for executing component based test cases
+2). Execution gets triggered from here. Initializes the result logs, reports and initiates execution
+3). Reads data from centrally maintained data files at the module level
+4). Assembly of different combinations of components.
+Solution :
+option [1] is correct
+
+95.State True or False:
+
+Component based framework(CBF) is an hybrid Automation framework.
+
+1). TRUE
+2). FALSE
+Solution :
+option [1] is correct
+
+96.In Data-Driven Automation Framework, ___________ in the test case gets linked to database, 
+excel to fetch data.
+
+1). Framework method
+2). Parameter
+3). External method
+4). None of the options
+Solution :
+option [2] is correct
+
+97.A framework is a hierarchical directory that encapsulates _______, __________, ___________ 
+in a single package.
+
+1). Dynamic shared library
+2). Image files
+3). Automation tools
+4). Reference documentation
+Solution :
+option [1,2,4] are correct
+
+98.Which framework is made up of components and aimed at optimizing test automation for 
+business critical applications?
+
+1). Table-Driven Framework
+2). Data-Driven Framework.
+3). Hybrid Automation Framework.
+4). Sprintest
+Solution :
+option [4] is correct
+
+99. Which provides continuous integration services for software development ?
+
+1). Cucumber
+2). Specflow
+3). Jenkins
+4). Ruby
+Solution :
+option [3] is correct
+
+100. Which framework requires the development of data tables and keywords, independent 
+of the test automation tool?
+
+1). Table-Driven Framework
+2). Data-Driven Framework.
+3). Hybrid Automation Framework.
+4). Component based framework(CBF)
+Solution :
+option [1] is correct
+
+
+
+
+
+
+</html>
+</body>
+</p>
+
+
